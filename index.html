@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer> </script>
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1><hr> ONLINE REGISTRATION FORM <hr></FORM></h1>
+    <div class="container center">
+        <table>
+            <tr>
+                <td>
+                    <form class="input-part" autocomplete="off" onsubmit="onFormSubmit()">
+                        <div>
+                            <label>FULL  NAME*:</label><label class="validation-error hide" id="fullNameValidationError"> (Mandatory field)</label>
+                            <input type="text" name="fullName" id="fullName">
+                        </div>
+                        <div>
+                            <label>CITY:</label>
+                            <input type="text" name="city" id="city">
+                        </div>
+                        <div>
+                            <label>CONTACT NO.:</label>
+                            <input type="number" name="mobile" id="mobile">
+                        </div>
+                        <div>
+                            <label>EMAIL-ID:</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div>
+                            <label>D.O.B:</label>
+                            <input type="date" name="dob" id="dob">
+                        </div>
+                        <div>
+                            <label>GENDER(MALE/FEMALE/OTHER):</label>
+                           <input type="text" name="gender" id="gender">
+                           
+
+                        </div>
+                        <div>
+                            <label>COURSE:</label>
+                            <input type="text" name="course" id="course">
+                        </div>
+    
+                        <div  class="form-action-buttons">
+                            <input type="submit" value="REGISTER">
+                        </div>
+                        <div class="form-action-buttons">
+                            <input type="reset" value="CLEAR">
+
+                        </div>
+    
+                    </form>
+
+                <td>
+                    <table class="list" id="studentList">
+                        <thead>
+                            <h2><hr> Student Enrollment Details <hr></h2>
+                        <tr>
+                            <th>FULL NAME </th>
+                            <th>CITY </th>
+                            <th>CONTACT NO. </th>
+                            <th>EMAIL-ID </th>
+                            <th>D.O.B </th>
+                            <th>GENDER </th>
+                            <th>COURSE </th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        
+                        </tbody>
+                    </table>
+                </td>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer id="footer" class="coloured-section">
+        <p style="color: rgb(192, 11, 243);  "><b> VISIT US ON  ::</b></p>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="col-md-3 footer-grids w3l-agileits">
+
+            <a target="_blank" href="https://www.linkedin.com/in/tushar-tripathy-3a5592244"><i class="fa fa-linkedin" aria-atomic ="true"></i></a>
+             <a target="_blank" href="https://github.com/Tus-02"><i class="fa fa-github "auto-complete="true" ></i></a><br>
+
+        </div>
+    </footer>
+    
+    <div class="text-center p-3" id="copy">
+        © 2022 Copyright:
+        <p class="love" id="name">DESIGNED BY <b> TUSHAR TRIPATHY</b></p>
+    </div>
+</body>
+</html>
